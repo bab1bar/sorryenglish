@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <link rel="icon" type="image/x-icon" href="sorryenglish.png">
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>SorryEnglish — Learn. Laugh. Speak.</title>
+  <meta name="description" content="SorryEnglish — funny, friendly English lessons. From 'sorry for my English' to confident speaking. Free lessons, memes, and shortcuts." />
+  <!-- Open Graph for social shares -->
+  <meta property="og:title" content="SorryEnglish — Learn. Laugh. Speak." />
+  <meta property="og:description" content="Funny, friendly English lessons: mistakes welcome. Bite-size lessons, memes, and practice." />
+  <meta property="og:type" content="website" />
+  <style>
+    :root{
+      --bg1:#fffdf2; --accent:#00a8ff; --accent2:#ffd166; --text:#1b2430;
+      --card:#ffffffaa; --muted:#555;
+      --radius:14px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0; font-family:Inter, "Segoe UI", Roboto, "Comic Sans MS", sans-serif;
+      background:linear-gradient(135deg,var(--bg1),#fff7e6);
+      color:var(--text); -webkit-font-smoothing:antialiased;
+    }
+    .wrap{max-width:980px;margin:30px auto;padding:22px;}
+    header{display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{
+      width:64px;height:64px;border-radius:12px;
+      background:linear-gradient(135deg,var(--accent),#6dd5ed);
+      display:grid;place-items:center;color:white;font-weight:800;font-size:18px;
+      box-shadow:0 6px 18px rgba(0,0,0,0.12);
+    }
+    .brand h1{margin:0;font-size:20px}
+    .tag{color:var(--muted);font-size:13px}
+    nav a{margin-left:12px;text-decoration:none;color:var(--text);font-weight:600}
+    .hero{
+      margin-top:22px;background:linear-gradient(180deg, rgba(255,255,255,0.8), rgba(255,255,255,0.6));
+      padding:28px;border-radius:var(--radius);display:grid;grid-template-columns:1fr 300px;gap:20px;align-items:center;
+      box-shadow:0 8px 30px rgba(0,0,0,0.06);
+    }
+    .hero h2{margin:0 0 10px;font-size:28px}
+    .hero p{margin:0;color:var(--muted);line-height:1.4}
+    .cta{margin-top:16px}
+    .btn{
+      background:var(--accent);color:white;padding:10px 16px;border-radius:10px;border:none;cursor:pointer;font-weight:700;
+      box-shadow:0 8px 18px rgba(0,168,255,0.18);
+    }
+    .small{font-size:13px;color:var(--muted)}
+    .card{background:var(--card);padding:16px;border-radius:12px}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:18px}
+    .lesson{padding:14px;border-radius:10px;background:white;box-shadow:0 6px 12px rgba(0,0,0,0.04)}
+    footer{margin-top:26px;color:var(--muted);font-size:13px;text-align:center}
+    /* responsive */
+    @media (max-width:880px){
+      .hero{grid-template-columns:1fr; text-align:center}
+      .grid{grid-template-columns:repeat(2,1fr)}
+      header{flex-direction:column;align-items:flex-start}
+    }
+    @media (max-width:520px){
+      .grid{grid-template-columns:1fr}
+      .logo{width:54px;height:54px}
+      .brand h1{font-size:18px}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="logo">SE</div>
+        <div>
+          <h1>SorryEnglish</h1>
+          <div class="tag">"Sorry for my English" — then speak like a boss.</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#lessons">Lessons</a>
+        <a href="#memes">Memes</a>
+        <a href="#about">About</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div>
+        <h2>Welcome to <strong>SorryEnglish</strong> 😅</h2>
+        <p>We make mistakes — then we fix them with jokes, short lessons, and real practice. Bite-size tips, desi examples, and confidence boosters to help you speak without fear.</p>
+
+        <div class="cta">
+          <button class="btn" onclick="window.location='#lessons'">Start with today's short lesson</button>
+          <div class="small" style="margin-top:8px">New: <strong>1-minute</strong> audio lessons & meme captions.</div>
+        </div>
+      </div>
+
+      <aside class="card">
+        <div style="font-weight:700">Today's Quick Tip</div>
+        <p style="margin:8px 0;color:var(--muted)">Use <em>"I think"</em> to soften a strong opinion: <br><strong>I think it's a good idea.</strong></p>
+        <div style="display:flex;gap:8px;justify-content:flex-end">
+          <button class="btn" style="background:var(--accent2);color:#222" onclick="alert('Practice: say this sentence aloud 5 times!')">Practice</button>
+        </div>
+      </aside>
+    </section>
+
+    <section id="lessons" style="margin-top:20px">
+      <h3 style="margin:0 0 8px">Popular bite-size lessons</h3>
+      <div class="grid">
+        <div class="lesson">
+          <strong>1. Their / There / They're</strong>
+          <p class="small">Short trick + example sentences. Mistakes welcome!</p>
+        </div>
+        <div class="lesson">
+          <strong>2. Small talk starters</strong>
+          <p class="small">3 lines to start any casual conversation.</p>
+        </div>
+        <div class="lesson">
+          <strong>3. Funny idioms</strong>
+          <p class="small">Learn 5 idioms with desi examples.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="memes" style="margin-top:20px">
+      <h3 style="margin:0 0 8px">Memes & practice</h3>
+      <div class="grid">
+        <div class="card small">Meme 1: "Sorry for my English" — caption ideas</div>
+        <div class="card small">Meme 2: "When teacher says 'Form a sentence'..."</div>
+        <div class="card small">Meme 3: Tongue-twister challenge</div>
+      </div>
+    </section>
+
+    <section id="about" style="margin-top:20px">
+      <h3 style="margin:0 0 8px">About SorryEnglish</h3>
+      <div class="card small">
+        Hi — I’m Babar. I teach English the funny, desi way. No shame in mistakes. Lessons are free. Subscribe, laugh, and speak.
+      </div>
+    </section>
+
+    <footer>
+      © <span id="year"></span> SorryEnglish — Learn. Laugh. Speak. • <span class="small">Made by Babar</span>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
